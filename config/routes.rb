@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'static_pages/home'
   get    '/login',   to: 'sessions#new'
-  get '/posts' to: 'posts#index'
+  get '/posts', to: 'posts#index'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   resources :posts
